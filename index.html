@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taste Dept.</title>
+  <meta name="description" content="Recipes from the Taste Dept. kitchen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="logo" aria-label="Taste Dept. — home">
+        <span class="logo-small">TASTE</span>
+        <span class="logo-big">DEPT<span class="logo-dot">.</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main">
+        <a href="#/recipes" data-nav="recipes">Recipes</a>
+        <a href="#/about" data-nav="about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <!-- Original hand-drawn tomato doodle, sitting on the footer's top edge -->
+    <div class="footer-doodle" aria-hidden="true">
+      <svg viewBox="0 0 200 200" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <defs>
+          <filter id="marker-wobble" x="-10%" y="-10%" width="120%" height="120%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4"/>
+          </filter>
+          <g id="tomato">
+            <!-- body, with a little dip where the stem sits -->
+            <path d="M38 112 C36 80 62 60 88 62 C94 63 97 66 100 69 C104 64 108 61 115 61 C143 60 166 85 163 117 C161 154 133 181 98 179 C60 180 35 149 39 109"/>
+            <!-- second, slightly offset marker pass on the lower-left -->
+            <path d="M45 138 C55 163 76 176 101 175"/>
+            <!-- shine -->
+            <path d="M133 82 C143 88 149 98 151 110"/>
+            <path d="M151 122 L152 128"/>
+            <!-- leafy star stem -->
+            <path d="M100 67 C90 60 78 62 66 71 C79 74 90 73 100 67"/>
+            <path d="M100 67 C94 56 86 48 77 45 C83 56 90 63 100 67"/>
+            <path d="M100 67 C110 60 123 61 134 70 C121 74 110 73 100 67"/>
+            <path d="M100 67 C106 56 114 49 123 46 C117 57 110 63 100 67"/>
+            <path d="M100 67 C97 74 92 80 86 84 C93 83 98 78 100 67"/>
+            <path d="M100 66 C99 55 101 44 107 35 C110 31 114 31 115 34"/>
+          </g>
+        </defs>
+        <g filter="url(#marker-wobble)">
+          <use href="#tomato" stroke="#142A80" stroke-width="9"/>
+          <use href="#tomato" stroke="#FF7A30" stroke-width="4"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-insta">
+          <p class="footer-headline">Fresh recipes and kitchen stories on my Instagram</p>
+          <a class="footer-follow" href="https://www.instagram.com/its.chef.alejandro/" target="_blank" rel="noopener">
+            <span class="follow-circle" aria-hidden="true"></span>Follow
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-cols" aria-label="Footer">
+        <ul>
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/recipes">Recipes</a></li>
+          <li><a href="#/about">About</a></li>
+        </ul>
+        <ul>
+          <li><a href="#/recipes/breakfast">Breakfast</a></li>
+          <li><a href="#/recipes/main">Main</a></li>
+          <li><a href="#/recipes/soup">Soup</a></li>
+          <li><a href="#/recipes/dessert">Dessert</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://www.instagram.com/its.chef.alejandro/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-bottom">
+        <div>
+          <a href="#/" class="footer-logo" aria-label="Taste Dept. — home">TASTE DEPT<span class="logo-dot">.</span></a>
+          <p class="footer-copy">© <span id="year">2026</span> Taste Dept. All rights reserved</p>
+        </div>
+        <a href="#/admin" class="admin-link">Admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
