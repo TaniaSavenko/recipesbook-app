@@ -181,7 +181,7 @@ h3 { font-size: 1.15rem; font-weight: 800; line-height: 1.1; }
   border-bottom: 1px solid var(--cream-line);
 }
 .main-nav a.is-active { box-shadow: inset 4px 0 0 var(--orange); padding-left: 16px; }
-.main-nav a:hover { color: var(--orange); }
+.main-nav a:hover { text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 3px; text-underline-offset: 6px; }
 
 @media (min-width: 760px) {
   .nav-toggle { display: none; }
@@ -209,7 +209,7 @@ h3 { font-size: 1.15rem; font-weight: 800; line-height: 1.1; }
     transition: transform .25s var(--ease);
   }
   .main-nav a:hover::after, .main-nav a.is-active::after { transform: scaleX(1); }
-  .main-nav a:hover { color: var(--cream); }
+  .main-nav a:hover { color: var(--cream); text-decoration: none; }
   .main-nav a::after { background: var(--orange); }
   .main-nav a.is-active { box-shadow: none; padding-left: 0; }
   .main-nav a.is-active::after { height: 3px; }
@@ -404,7 +404,7 @@ h3 { font-size: 1.15rem; font-weight: 800; line-height: 1.1; }
   opacity: .85;
   transition: opacity .2s, transform .2s var(--ease);
 }
-.back-link:hover { opacity: 1; color: var(--orange); transform: translateX(-3px); }
+.back-link:hover { opacity: 1; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; transform: translateX(-3px); }
 
 .recipe-head { display: grid; gap: 28px; }
 .recipe-photo {
